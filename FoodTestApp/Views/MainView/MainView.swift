@@ -44,21 +44,7 @@ extension MainView {
     
     private var userLocationInfoView: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
-            HStack(alignment: .top) {
-                Image("locationImage")
-                    .resizable()
-                    .frame(width: 24, height: 24)
-                
-                
-                VStack(alignment: .leading) {
-                    Text(viewModel.userLocation)
-                        .font(.custom("SFProDisplay-Regular", size: 18))
-                    
-                    Text(viewModel.currentDate)
-                        .foregroundColor(.black.opacity(0.5))
-                        .font(.custom("SFProDisplay-Regular", size: 14))
-                }
-            }
+            UserLocationView()
         }
     }
     

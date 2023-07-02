@@ -18,6 +18,9 @@
 		0EA204EF2A51875A00E2A3D4 /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA204EE2A51875A00E2A3D4 /* SFProDisplay-Medium.ttf */; };
 		0EA204F12A5187CC00E2A3D4 /* AppButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204F02A5187CC00E2A3D4 /* AppButtonView.swift */; };
 		0EA21A382A4FF5AA00DAE1D9 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA21A372A4FF5AA00DAE1D9 /* UserLocationManager.swift */; };
+		0EAF10062A51FAAF00699D8E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAF10052A51FAAF00699D8E /* CartView.swift */; };
+		0EAF10082A51FBAE00699D8E /* UserLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAF10072A51FBAE00699D8E /* UserLocationView.swift */; };
+		0EAF100A2A51FEC900699D8E /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EAF10092A51FEC900699D8E /* UserDefaultsManager.swift */; };
 		0ED6FAC52A4F37CA0014C1BF /* FoodTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED6FAC42A4F37CA0014C1BF /* FoodTestAppApp.swift */; };
 		0ED6FAC72A4F37CA0014C1BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED6FAC62A4F37CA0014C1BF /* MainView.swift */; };
 		0ED6FAC92A4F37CB0014C1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ED6FAC82A4F37CB0014C1BF /* Assets.xcassets */; };
@@ -46,6 +49,9 @@
 		0EA204EE2A51875A00E2A3D4 /* SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Medium.ttf"; sourceTree = "<group>"; };
 		0EA204F02A5187CC00E2A3D4 /* AppButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonView.swift; sourceTree = "<group>"; };
 		0EA21A372A4FF5AA00DAE1D9 /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
+		0EAF10052A51FAAF00699D8E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		0EAF10072A51FBAE00699D8E /* UserLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationView.swift; sourceTree = "<group>"; };
+		0EAF10092A51FEC900699D8E /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		0ED6FAC12A4F37CA0014C1BF /* FoodTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED6FAC42A4F37CA0014C1BF /* FoodTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTestAppApp.swift; sourceTree = "<group>"; };
 		0ED6FAC62A4F37CA0014C1BF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -99,6 +105,14 @@
 				0EA204EC2A51869100E2A3D4 /* DishDetailsViewModel.swift */,
 			);
 			path = DishDetailsView;
+			sourceTree = "<group>";
+		};
+		0EAF10042A51FAA000699D8E /* CartView */ = {
+			isa = PBXGroup;
+			children = (
+				0EAF10052A51FAAF00699D8E /* CartView.swift */,
+			);
+			path = CartView;
 			sourceTree = "<group>";
 		};
 		0ED6FAB82A4F37CA0014C1BF = {
@@ -155,6 +169,7 @@
 			children = (
 				0ED6FAF22A4F61BB0014C1BF /* TabBarView */,
 				0ED6FAD42A4F38640014C1BF /* MainView */,
+				0EAF10042A51FAA000699D8E /* CartView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +209,7 @@
 			children = (
 				0ED6FAE92A4F4C180014C1BF /* CategoryApiManager.swift */,
 				0EA204E52A516EBF00E2A3D4 /* DishesApiManager.swift */,
+				0EAF10092A51FEC900699D8E /* UserDefaultsManager.swift */,
 				0ED6FAE52A4F4A260014C1BF /* ImageDownloadManager.swift */,
 				0EA21A372A4FF5AA00DAE1D9 /* UserLocationManager.swift */,
 			);
@@ -214,6 +230,7 @@
 			children = (
 				0ED6FAED2A4F5C170014C1BF /* ScaleButtonModifire.swift */,
 				0EA204F02A5187CC00E2A3D4 /* AppButtonView.swift */,
+				0EAF10072A51FBAE00699D8E /* UserLocationView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -312,8 +329,10 @@
 				0EA204DD2A51669300E2A3D4 /* Color + Extension.swift in Sources */,
 				0EA204E42A516CF700E2A3D4 /* DishViewModel.swift in Sources */,
 				0ED6FAF42A4F61CD0014C1BF /* TabBarView.swift in Sources */,
+				0EAF100A2A51FEC900699D8E /* UserDefaultsManager.swift in Sources */,
 				0ED6FAE32A4F44080014C1BF /* Category.swift in Sources */,
 				0ED6FAEE2A4F5C170014C1BF /* ScaleButtonModifire.swift in Sources */,
+				0EAF10062A51FAAF00699D8E /* CartView.swift in Sources */,
 				0ED6FAC52A4F37CA0014C1BF /* FoodTestAppApp.swift in Sources */,
 				0EA204E22A5168B500E2A3D4 /* Dish.swift in Sources */,
 				0ED6FAE62A4F4A260014C1BF /* ImageDownloadManager.swift in Sources */,
@@ -324,6 +343,7 @@
 				0ED6FAF12A4F5EAC0014C1BF /* CategoryDetailsView.swift in Sources */,
 				0ED6FAEA2A4F4C180014C1BF /* CategoryApiManager.swift in Sources */,
 				0EA204F12A5187CC00E2A3D4 /* AppButtonView.swift in Sources */,
+				0EAF10082A51FBAE00699D8E /* UserLocationView.swift in Sources */,
 				0ED6FADC2A4F43070014C1BF /* MainViewModel.swift in Sources */,
 				0EA204EB2A517CC500E2A3D4 /* DishDetailsView.swift in Sources */,
 				0EA204E02A51689C00E2A3D4 /* DishView.swift in Sources */,

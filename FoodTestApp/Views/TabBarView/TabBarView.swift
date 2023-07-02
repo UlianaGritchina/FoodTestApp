@@ -23,7 +23,7 @@ struct TabBarView: View {
                     Label("Поиск", systemImage: "bolt.fill")
                 }
              
-            Color.blue
+            CartView()
                 .tabItem {
                     Label("Корзина", systemImage: "gear")
                 }

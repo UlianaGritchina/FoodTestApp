@@ -11,7 +11,7 @@ struct AppButtonView: View {
     let title: String
     let action: () -> ()
     var body: some View {
-        Button(action: {}) {
+        Button(action: action) {
             Text(title)
                 .font(.custom("SFProDisplay-Medium", size: 16))
                 .foregroundColor(.white)

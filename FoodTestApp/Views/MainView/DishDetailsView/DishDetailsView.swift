@@ -16,7 +16,6 @@ struct DishDetailsView: View {
         }
         .opacity(viewModel.isShow ? 1 : 0)
         .animation(.easeOut(duration: 0.3), value: viewModel.isShow)
-        .onTapGesture { viewModel.close() }
     }
 }
 
@@ -93,7 +92,7 @@ extension DishDetailsView {
     }
     
     private var addButton: some View {
-        AppButtonView(title: "Добавить в корзину", action: {})
+        AppButtonView(title: "Добавить в корзину", action: viewModel.addDishToCart)
             .padding(.top, 8)
     }
     
@@ -101,6 +100,7 @@ extension DishDetailsView {
         Rectangle()
             .ignoresSafeArea()
             .opacity(0.4)
+            .onTapGesture { viewModel.close() }
     }
     
     private func squareButton(imageName: String, action: @escaping () -> ()) -> some View {
