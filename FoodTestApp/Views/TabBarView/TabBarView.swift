@@ -8,23 +8,34 @@
 import SwiftUI
 
 struct TabBarView: View {
+    @StateObject private var dishDetailsViewModel = DishDetailsViewModel()
     var body: some View {
         TabView {
             MainView()
                 .tabItem {
                     Image("homeIcone")
-                    Text("j")
+                    Text("Главная")
                 }
+                .environmentObject(dishDetailsViewModel)
             
             Color.red
                 .tabItem {
-                    Label("Train", systemImage: "bolt.fill")
+                    Label("Поиск", systemImage: "bolt.fill")
                 }
              
             Color.blue
                 .tabItem {
-                    Label("Settings", systemImage: "gear")
+                    Label("Корзина", systemImage: "gear")
                 }
+            
+            Color.purple
+                .tabItem {
+                    Label("Аккаунт", systemImage: "gear")
+                }
+        }
+        .overlay {
+            DishDetailsView()
+                .environmentObject(dishDetailsViewModel)
         }
     }
 }

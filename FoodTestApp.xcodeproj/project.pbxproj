@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0EA204DD2A51669300E2A3D4 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204DC2A51669300E2A3D4 /* Color + Extension.swift */; };
+		0EA204E02A51689C00E2A3D4 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204DF2A51689C00E2A3D4 /* DishView.swift */; };
+		0EA204E22A5168B500E2A3D4 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204E12A5168B500E2A3D4 /* Dish.swift */; };
+		0EA204E42A516CF700E2A3D4 /* DishViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204E32A516CF700E2A3D4 /* DishViewModel.swift */; };
+		0EA204E62A516EBF00E2A3D4 /* DishesApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204E52A516EBF00E2A3D4 /* DishesApiManager.swift */; };
+		0EA204E82A51721B00E2A3D4 /* CategoryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204E72A51721B00E2A3D4 /* CategoryDetailsViewModel.swift */; };
+		0EA204EB2A517CC500E2A3D4 /* DishDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204EA2A517CC500E2A3D4 /* DishDetailsView.swift */; };
+		0EA204ED2A51869100E2A3D4 /* DishDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204EC2A51869100E2A3D4 /* DishDetailsViewModel.swift */; };
+		0EA204EF2A51875A00E2A3D4 /* SFProDisplay-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA204EE2A51875A00E2A3D4 /* SFProDisplay-Medium.ttf */; };
+		0EA204F12A5187CC00E2A3D4 /* AppButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204F02A5187CC00E2A3D4 /* AppButtonView.swift */; };
 		0EA21A382A4FF5AA00DAE1D9 /* UserLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA21A372A4FF5AA00DAE1D9 /* UserLocationManager.swift */; };
 		0ED6FAC52A4F37CA0014C1BF /* FoodTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED6FAC42A4F37CA0014C1BF /* FoodTestAppApp.swift */; };
 		0ED6FAC72A4F37CA0014C1BF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED6FAC62A4F37CA0014C1BF /* MainView.swift */; };
@@ -25,6 +35,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EA204DC2A51669300E2A3D4 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
+		0EA204DF2A51689C00E2A3D4 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
+		0EA204E12A5168B500E2A3D4 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
+		0EA204E32A516CF700E2A3D4 /* DishViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishViewModel.swift; sourceTree = "<group>"; };
+		0EA204E52A516EBF00E2A3D4 /* DishesApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesApiManager.swift; sourceTree = "<group>"; };
+		0EA204E72A51721B00E2A3D4 /* CategoryDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailsViewModel.swift; sourceTree = "<group>"; };
+		0EA204EA2A517CC500E2A3D4 /* DishDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsView.swift; sourceTree = "<group>"; };
+		0EA204EC2A51869100E2A3D4 /* DishDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsViewModel.swift; sourceTree = "<group>"; };
+		0EA204EE2A51875A00E2A3D4 /* SFProDisplay-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Medium.ttf"; sourceTree = "<group>"; };
+		0EA204F02A5187CC00E2A3D4 /* AppButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonView.swift; sourceTree = "<group>"; };
 		0EA21A372A4FF5AA00DAE1D9 /* UserLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocationManager.swift; sourceTree = "<group>"; };
 		0ED6FAC12A4F37CA0014C1BF /* FoodTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ED6FAC42A4F37CA0014C1BF /* FoodTestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTestAppApp.swift; sourceTree = "<group>"; };
@@ -55,6 +75,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EA204DB2A51668000E2A3D4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0EA204DC2A51669300E2A3D4 /* Color + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0EA204DE2A51688900E2A3D4 /* DishView */ = {
+			isa = PBXGroup;
+			children = (
+				0EA204DF2A51689C00E2A3D4 /* DishView.swift */,
+				0EA204E32A516CF700E2A3D4 /* DishViewModel.swift */,
+			);
+			path = DishView;
+			sourceTree = "<group>";
+		};
+		0EA204E92A517C9100E2A3D4 /* DishDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				0EA204EA2A517CC500E2A3D4 /* DishDetailsView.swift */,
+				0EA204EC2A51869100E2A3D4 /* DishDetailsViewModel.swift */,
+			);
+			path = DishDetailsView;
+			sourceTree = "<group>";
+		};
 		0ED6FAB82A4F37CA0014C1BF = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +122,7 @@
 			children = (
 				0ED6FAD82A4F3D2C0014C1BF /* Info.plist */,
 				0ED6FAD22A4F383C0014C1BF /* SupportingFiles */,
+				0EA204DB2A51668000E2A3D4 /* Extensions */,
 				0ED6FAEB2A4F51930014C1BF /* Models */,
 				0ED6FAE42A4F4A150014C1BF /* Managers */,
 				0ED6FAD32A4F38570014C1BF /* Views */,
@@ -117,8 +164,9 @@
 			children = (
 				0ED6FAC62A4F37CA0014C1BF /* MainView.swift */,
 				0ED6FADB2A4F43070014C1BF /* MainViewModel.swift */,
-				0ED6FAEF2A4F5E930014C1BF /* CategoryDetailsView */,
 				0ED6FAE12A4F43F90014C1BF /* CategoryCell */,
+				0ED6FAEF2A4F5E930014C1BF /* CategoryDetailsView */,
+				0EA204E92A517C9100E2A3D4 /* DishDetailsView */,
 			);
 			path = MainView;
 			sourceTree = "<group>";
@@ -127,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				0ED6FAD92A4F3EA20014C1BF /* SFProDisplay-Regular.ttf */,
+				0EA204EE2A51875A00E2A3D4 /* SFProDisplay-Medium.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -144,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				0ED6FAE92A4F4C180014C1BF /* CategoryApiManager.swift */,
+				0EA204E52A516EBF00E2A3D4 /* DishesApiManager.swift */,
 				0ED6FAE52A4F4A260014C1BF /* ImageDownloadManager.swift */,
 				0EA21A372A4FF5AA00DAE1D9 /* UserLocationManager.swift */,
 			);
@@ -154,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				0ED6FAE22A4F44080014C1BF /* Category.swift */,
+				0EA204E12A5168B500E2A3D4 /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				0ED6FAED2A4F5C170014C1BF /* ScaleButtonModifire.swift */,
+				0EA204F02A5187CC00E2A3D4 /* AppButtonView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -170,6 +222,8 @@
 			isa = PBXGroup;
 			children = (
 				0ED6FAF02A4F5EAC0014C1BF /* CategoryDetailsView.swift */,
+				0EA204E72A51721B00E2A3D4 /* CategoryDetailsViewModel.swift */,
+				0EA204DE2A51688900E2A3D4 /* DishView */,
 			);
 			path = CategoryDetailsView;
 			sourceTree = "<group>";
@@ -241,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED6FADA2A4F3EA20014C1BF /* SFProDisplay-Regular.ttf in Resources */,
+				0EA204EF2A51875A00E2A3D4 /* SFProDisplay-Medium.ttf in Resources */,
 				0ED6FACC2A4F37CB0014C1BF /* Preview Assets.xcassets in Resources */,
 				0ED6FAC92A4F37CB0014C1BF /* Assets.xcassets in Resources */,
 			);
@@ -254,17 +309,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ED6FAC72A4F37CA0014C1BF /* MainView.swift in Sources */,
+				0EA204DD2A51669300E2A3D4 /* Color + Extension.swift in Sources */,
+				0EA204E42A516CF700E2A3D4 /* DishViewModel.swift in Sources */,
 				0ED6FAF42A4F61CD0014C1BF /* TabBarView.swift in Sources */,
 				0ED6FAE32A4F44080014C1BF /* Category.swift in Sources */,
 				0ED6FAEE2A4F5C170014C1BF /* ScaleButtonModifire.swift in Sources */,
 				0ED6FAC52A4F37CA0014C1BF /* FoodTestAppApp.swift in Sources */,
+				0EA204E22A5168B500E2A3D4 /* Dish.swift in Sources */,
 				0ED6FAE62A4F4A260014C1BF /* ImageDownloadManager.swift in Sources */,
 				0ED6FAE82A4F4BA50014C1BF /* CategoryCellViewModel.swift in Sources */,
+				0EA204E62A516EBF00E2A3D4 /* DishesApiManager.swift in Sources */,
+				0EA204E82A51721B00E2A3D4 /* CategoryDetailsViewModel.swift in Sources */,
 				0ED6FAE02A4F43BB0014C1BF /* CategoryCell.swift in Sources */,
 				0ED6FAF12A4F5EAC0014C1BF /* CategoryDetailsView.swift in Sources */,
 				0ED6FAEA2A4F4C180014C1BF /* CategoryApiManager.swift in Sources */,
+				0EA204F12A5187CC00E2A3D4 /* AppButtonView.swift in Sources */,
 				0ED6FADC2A4F43070014C1BF /* MainViewModel.swift in Sources */,
+				0EA204EB2A517CC500E2A3D4 /* DishDetailsView.swift in Sources */,
+				0EA204E02A51689C00E2A3D4 /* DishView.swift in Sources */,
 				0EA21A382A4FF5AA00DAE1D9 /* UserLocationManager.swift in Sources */,
+				0EA204ED2A51869100E2A3D4 /* DishDetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,11 +461,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodTestApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,9 +475,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sugry.FoodTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -427,11 +496,13 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodTestApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,9 +510,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = sugry.FoodTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
