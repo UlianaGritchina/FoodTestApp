@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E5EA1522A52860700EF78E8 /* DishImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA1512A52860700EF78E8 /* DishImageView.swift */; };
+		0E5EA1542A5288A000EF78E8 /* DishCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA1532A5288A000EF78E8 /* DishCell.swift */; };
+		0E5EA1562A52914600EF78E8 /* SavedDish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA1552A52914600EF78E8 /* SavedDish.swift */; };
+		0E5EA1582A529EB700EF78E8 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA1572A529EB700EF78E8 /* CartViewModel.swift */; };
 		0EA204DD2A51669300E2A3D4 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204DC2A51669300E2A3D4 /* Color + Extension.swift */; };
 		0EA204E02A51689C00E2A3D4 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204DF2A51689C00E2A3D4 /* DishView.swift */; };
 		0EA204E22A5168B500E2A3D4 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204E12A5168B500E2A3D4 /* Dish.swift */; };
@@ -38,6 +42,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E5EA1512A52860700EF78E8 /* DishImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishImageView.swift; sourceTree = "<group>"; };
+		0E5EA1532A5288A000EF78E8 /* DishCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCell.swift; sourceTree = "<group>"; };
+		0E5EA1552A52914600EF78E8 /* SavedDish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedDish.swift; sourceTree = "<group>"; };
+		0E5EA1572A529EB700EF78E8 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		0EA204DC2A51669300E2A3D4 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
 		0EA204DF2A51689C00E2A3D4 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
 		0EA204E12A5168B500E2A3D4 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -110,7 +118,9 @@
 		0EAF10042A51FAA000699D8E /* CartView */ = {
 			isa = PBXGroup;
 			children = (
+				0E5EA1572A529EB700EF78E8 /* CartViewModel.swift */,
 				0EAF10052A51FAAF00699D8E /* CartView.swift */,
+				0E5EA1532A5288A000EF78E8 /* DishCell.swift */,
 			);
 			path = CartView;
 			sourceTree = "<group>";
@@ -221,6 +231,7 @@
 			children = (
 				0ED6FAE22A4F44080014C1BF /* Category.swift */,
 				0EA204E12A5168B500E2A3D4 /* Dish.swift */,
+				0E5EA1552A52914600EF78E8 /* SavedDish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +242,7 @@
 				0ED6FAED2A4F5C170014C1BF /* ScaleButtonModifire.swift */,
 				0EA204F02A5187CC00E2A3D4 /* AppButtonView.swift */,
 				0EAF10072A51FBAE00699D8E /* UserLocationView.swift */,
+				0E5EA1512A52860700EF78E8 /* DishImageView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -333,11 +345,15 @@
 				0ED6FAE32A4F44080014C1BF /* Category.swift in Sources */,
 				0ED6FAEE2A4F5C170014C1BF /* ScaleButtonModifire.swift in Sources */,
 				0EAF10062A51FAAF00699D8E /* CartView.swift in Sources */,
+				0E5EA1522A52860700EF78E8 /* DishImageView.swift in Sources */,
 				0ED6FAC52A4F37CA0014C1BF /* FoodTestAppApp.swift in Sources */,
 				0EA204E22A5168B500E2A3D4 /* Dish.swift in Sources */,
+				0E5EA1542A5288A000EF78E8 /* DishCell.swift in Sources */,
 				0ED6FAE62A4F4A260014C1BF /* ImageDownloadManager.swift in Sources */,
 				0ED6FAE82A4F4BA50014C1BF /* CategoryCellViewModel.swift in Sources */,
 				0EA204E62A516EBF00E2A3D4 /* DishesApiManager.swift in Sources */,
+				0E5EA1562A52914600EF78E8 /* SavedDish.swift in Sources */,
+				0E5EA1582A529EB700EF78E8 /* CartViewModel.swift in Sources */,
 				0EA204E82A51721B00E2A3D4 /* CategoryDetailsViewModel.swift in Sources */,
 				0ED6FAE02A4F43BB0014C1BF /* CategoryCell.swift in Sources */,
 				0ED6FAF12A4F5EAC0014C1BF /* CategoryDetailsView.swift in Sources */,

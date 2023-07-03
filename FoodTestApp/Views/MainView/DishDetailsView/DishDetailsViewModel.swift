@@ -14,7 +14,7 @@ final class DishDetailsViewModel: ObservableObject {
     let userDefaultsManager = UserDefaultsManager.shared
     
     var cancellable = Set<AnyCancellable>()
-    var savedDishes: [Dish] = []
+    var savedDishes: [SavedDish] = []
     
     @Published var selectedDish: Dish?
     @Published var isShow = false
@@ -53,8 +53,25 @@ final class DishDetailsViewModel: ObservableObject {
     }
     
     func addDishToCart() {
-        guard let dish = selectedDish else { return }
-        savedDishes.append(dish)
+        savedDishes = userDefaultsManager.getSavedDishes()
+        guard let dish = selectedDish, let imageData = imageData else { return }
+        let dishForSave = SavedDish(dish: dish, imageData: imageData)
+        
+        if savedDishes.isEmpty {
+            savedDishes.append(dishForSave)
+            userDefaultsManager.saveDishes(savedDishes)
+            return
+        }
+        
+        for index in 0..<savedDishes.count {
+            if savedDishes[index].name == dishForSave.name {
+                savedDishes[index] = dishForSave
+                userDefaultsManager.saveDishes(savedDishes)
+                return
+            }
+        }
+        
+        savedDishes.append(dishForSave)
         userDefaultsManager.saveDishes(savedDishes)
     }
     

@@ -7,27 +7,26 @@
 
 import SwiftUI
 
-final class CartViewModel: ObservableObject {
-    
-    let userDefaultsManager = UserDefaultsManager.shared
-    
-    @Published var savedDishes = UserDefaultsManager.shared.getSavedDishes()
-    
-    func getSavedDishes() {
-        savedDishes = userDefaultsManager.getSavedDishes()
-    }
-    
-}
-
 struct CartView: View {
     @StateObject var viewModel = CartViewModel()
     
     var body: some View {
         NavigationView {
-            VStack {
+            ScrollView {
                 ForEach(viewModel.savedDishes) { dish in
-                    DishView(viewModel: DishViewModel(dish: dish))
+                    DishCell(
+                        savedDish: dish,
+                        plusAction: { viewModel.plusDish(dish) },
+                        minusAction: { viewModel.minusDish(dish) }
+                    )
                 }
+                .padding(.top, 16)
+                .padding(.bottom, 80)
+            }
+            .overlay(alignment: .bottom) {
+                AppButtonView(title: "Оплатить \(viewModel.dishesSum) ₽", action: {})
+                    .padding(.horizontal, 16)
+                    .padding(.bottom, 16)
             }
             .toolbar {
                 userLocationInfoView
@@ -42,7 +41,6 @@ struct CartView: View {
 
 struct CartView_Previews: PreviewProvider {
     static var previews: some View {
-        
         CartView()
     }
 }

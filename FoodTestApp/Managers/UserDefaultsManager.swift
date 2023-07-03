@@ -14,16 +14,16 @@ class UserDefaultsManager {
     
     private let dishes = "dishes"
     
-    func saveDishes(_ dish: [Dish]) {
+    func saveDishes(_ dish: [SavedDish]) {
         if let encodedData = try? JSONEncoder().encode(dish) {
             UserDefaults.standard.set(encodedData, forKey: dishes)
         }
     }
     
-    func getSavedDishes() -> [Dish] {
+    func getSavedDishes() -> [SavedDish] {
         guard
             let data = UserDefaults.standard.data(forKey: dishes),
-            let dishes = try? JSONDecoder().decode([Dish].self, from: data)
+            let dishes = try? JSONDecoder().decode([SavedDish].self, from: data)
         else { return [] }
         return dishes
     }

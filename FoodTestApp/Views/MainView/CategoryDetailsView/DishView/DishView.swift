@@ -32,33 +32,13 @@ extension DishView {
     
     private var dishContent: some View {
         VStack(alignment: .leading, spacing: 0) {
-            dishImageView
+            DishImageView(viewModel: DishImageViewModel(dish: viewModel.dish!))
             
             dishNameView
         }
         .frame(maxWidth: 109)
     }
     
-    private var dishImageView: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .frame(width: 109, height: 109)
-            .foregroundColor(.appGray)
-            .overlay { dishImage }
-    }
-    
-    private var dishImage: some View {
-        VStack {
-            if let imageData = viewModel.imageData {
-                Image(uiImage: UIImage(data: imageData) ?? UIImage(systemName: "photo")!)
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.leading, 16)
-                    .padding(.top, 13)
-            } else {
-                ProgressView()
-            }
-        }
-    }
     
     private var dishNameView: some View {
         Text(viewModel.dishName)

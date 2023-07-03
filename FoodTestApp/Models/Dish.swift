@@ -11,7 +11,7 @@ struct Dishes: Codable {
     let dishes: [Dish]
 }
 
-struct Dish: Codable, Identifiable, Equatable {
+struct Dish: Codable, Identifiable, Equatable, Hashable {
     let id: Int?
     let name: String?
     let price: Int?
@@ -19,5 +19,4 @@ struct Dish: Codable, Identifiable, Equatable {
     let description: String?
     let image_url: String?
     let tegs: [String]?
-    
 }

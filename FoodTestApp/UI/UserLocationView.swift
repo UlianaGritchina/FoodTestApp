@@ -19,6 +19,10 @@ final class UserLocationViewModel: ObservableObject {
     
     @Published var userLocation = ""
     
+    init() {
+        getUserLocation()
+    }
+    
     private func getUserLocation() {
         userLocationManager.getUserLocationName { city in
             guard let city = city else { return }
