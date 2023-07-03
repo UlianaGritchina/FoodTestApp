@@ -23,11 +23,7 @@ struct CategoryDetailsView: View {
         VStack {
             tagPicker
             
-            if !viewModel.dishes.isEmpty {
-                dishesScrollView
-            } else {
-                progressView
-            }
+            dishesView
         }
         .navigationTitle(category.name ?? "")
         .navigationBarTitleDisplayMode(.inline)
@@ -103,7 +99,17 @@ extension CategoryDetailsView {
         }
     }
     
-    //MARK: DishesScroll
+    //MARK: DishesView
+    
+    private var dishesView: some View {
+        VStack {
+            if !viewModel.dishes.isEmpty {
+                dishesScrollView
+            } else {
+                progressView
+            }
+        }
+    }
     
     private var dishesScrollView: some View {
         ScrollView {

@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+enum StepperType: String {
+    case plus = "plusIcon"
+    case minus = "minusIcon"
+}
+
 struct DishCell: View {
     let savedDish: SavedDish
     let plusAction: () -> ()
@@ -33,71 +38,71 @@ struct DishCell: View {
     }
 }
 
-//struct DishCell_Previews: PreviewProvider {
-//    static var previews: some View {
-//        DishCell(dish: Dish(
-//            id: 1, name: "name",
-//            price: 299,
-//            weight: 300,
-//            description: "description",
-//            image_url: "",
-//            tegs: []),
-//                 plusAction: {},
-//                 minusAction: {}
-//        )
-//    }
-//}
-
 extension DishCell {
+    
+    // MARK: Dish info
     
     private var dishInfo: some View {
         HStack {
             DishImageView(viewModel: dishImageViewModel)
+            
             VStack(alignment: .leading, spacing: 3) {
+                
                 Text(savedDish.name ?? "")
-                HStack(alignment: .center, spacing: 5) {
-                    Text("\(savedDish.price ?? 0) ₽")
-                    
-                    Image(systemName: "circle.fill")
-                        .resizable()
-                        .frame(width: 2, height: 2)
-                        .opacity(0.4)
-                    
-                    Text("\(savedDish.weight ?? 0)г")
-                        .opacity(0.4)
-                }
+                
+                dishPriceWeight
             }
             .font(.custom("SFProDisplay-Regular", size: 14))
         }
     }
     
+    private var dishPriceWeight: some View {
+        HStack(alignment: .center, spacing: 5) {
+            Text("\(savedDish.price ?? 0) ₽")
+            
+            Image(systemName: "circle.fill")
+                .resizable()
+                .frame(width: 2, height: 2)
+                .opacity(0.4)
+            
+            Text("\(savedDish.weight ?? 0)г")
+                .opacity(0.4)
+        }
+    }
+    
+    
+    // MARK: Stepper
+    
     private var stepper: some View {
-        RoundedRectangle(cornerRadius: 10)
-            .foregroundColor(.appGray)
-            .frame(width: 99, height: 32)
-            .overlay {
-                HStack {
-                    Button(action: minusAction) {
-                        Image("minusIcon")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                    }
-                    
-                    Spacer()
-                    
-                    Text("\(savedDish.count)")
-                        .font(.custom("SFProDisplay-Regular", size: 14))
-                    
-                    Spacer()
-                    
-                    Button(action: plusAction) {
-                        Image("plusIcon")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                    }
-                }
-                .padding(.horizontal, 6)
+        HStack {
+            stepperButton(type: .minus)
+            
+            Spacer()
+            
+            Text("\(savedDish.count)")
+                .font(.custom("SFProDisplay-Regular", size: 14))
+            
+            Spacer()
+            
+            stepperButton(type: .plus)
+        }
+        .frame(width: 99, height: 32)
+        .padding(.horizontal, 6)
+        .background(Color.appGray)
+        .cornerRadius(10)
+    }
+    
+    private func stepperButton(type: StepperType) -> some View {
+        Button(action: {
+            switch type {
+            case .plus:  plusAction()
+            case .minus: minusAction()
             }
+        }) {
+            Image(type.rawValue)
+                .resizable()
+                .frame(width: 24, height: 24)
+        }
     }
     
 }

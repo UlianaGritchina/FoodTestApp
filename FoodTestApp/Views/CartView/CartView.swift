@@ -12,15 +12,9 @@ struct CartView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                if !viewModel.savedDishes.isEmpty {
-                    dishesScrollView
-                } else {
-                    emptyCartView
-                }
-            }
-            .toolbar { UserInfoToolBar() }
-            .onAppear { viewModel.getSavedDishes() }
+            dishesView
+                .toolbar { UserInfoToolBar() }
+                .onAppear { viewModel.getSavedDishes() }
         }
     }
 }
@@ -32,6 +26,16 @@ struct CartView_Previews: PreviewProvider {
 }
 
 extension CartView {
+    
+    private var dishesView: some View {
+        VStack {
+            if !viewModel.savedDishes.isEmpty {
+                dishesScrollView
+            } else {
+                emptyCartView
+            }
+        }
+    }
     
     private var dishesScrollView: some View {
         ScrollView {

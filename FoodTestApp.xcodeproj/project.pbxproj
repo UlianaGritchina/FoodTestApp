@@ -71,7 +71,7 @@
 		0ED6FAC62A4F37CA0014C1BF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0ED6FAC82A4F37CB0014C1BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0ED6FACB2A4F37CB0014C1BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0ED6FAD82A4F3D2C0014C1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0ED6FAD82A4F3D2C0014C1BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED6FAD92A4F3EA20014C1BF /* SFProDisplay-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProDisplay-Regular.ttf"; sourceTree = "<group>"; };
 		0ED6FADB2A4F43070014C1BF /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		0ED6FADF2A4F43BB0014C1BF /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
@@ -159,7 +159,6 @@
 		0ED6FAC32A4F37CA0014C1BF /* FoodTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				0ED6FAD82A4F3D2C0014C1BF /* Info.plist */,
 				0ED6FAD22A4F383C0014C1BF /* SupportingFiles */,
 				0EA204DB2A51668000E2A3D4 /* Extensions */,
 				0ED6FAEB2A4F51930014C1BF /* Models */,
@@ -181,6 +180,7 @@
 		0ED6FAD22A4F383C0014C1BF /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0ED6FAD82A4F3D2C0014C1BF /* Info.plist */,
 				0ED6FACA2A4F37CB0014C1BF /* Preview Content */,
 				0ED6FAD72A4F3CEC0014C1BF /* Fonts */,
 				0ED6FAC42A4F37CA0014C1BF /* FoodTestAppApp.swift */,
@@ -516,7 +516,7 @@
 				DEVELOPMENT_TEAM = 86SKTK882J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodTestApp/Info.plist;
+				INFOPLIST_FILE = FoodTestApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -551,7 +551,7 @@
 				DEVELOPMENT_TEAM = 86SKTK882J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = FoodTestApp/Info.plist;
+				INFOPLIST_FILE = FoodTestApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
