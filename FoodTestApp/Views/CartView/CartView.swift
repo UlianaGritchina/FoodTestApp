@@ -16,7 +16,7 @@ struct CartView: View {
                 if !viewModel.savedDishes.isEmpty {
                     dishesScrollView
                 } else {
-                    NoContentView()
+                    emptyCartView
                 }
             }
             .toolbar {
@@ -47,7 +47,7 @@ extension CartView {
     private var userLocationInfoView: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             UserLocationView()
-        }
+        } 
     }
     
     private var dishesScrollView: some View {
@@ -63,10 +63,20 @@ extension CartView {
             .padding(.bottom, 80)
         }
         .overlay(alignment: .bottom) {
-            AppButtonView(title: "Оплатить \(viewModel.dishesSum) ₽", action: {})
+            AppButtonView(title: "Оплатить \(viewModel.totalSumString) ₽", action: {})
                 .padding(.horizontal, 16)
                 .padding(.bottom, 16)
         }
+    }
+    
+    private var emptyCartView: some View {
+        VStack(spacing: 15) {
+            Image(systemName: "cart")
+                .font(.system(size: 100))
+            Text("В корзине пусто")
+                .font(.custom("SFProDisplay-Regular", size: 23))
+        }
+        .foregroundColor(.secondary)
     }
     
 }

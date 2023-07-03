@@ -13,6 +13,7 @@ final class CartViewModel: ObservableObject {
     
     @Published var savedDishes = UserDefaultsManager.shared.getSavedDishes()
     @Published var dishesSum = 0
+    @Published var totalSumString = ""
     
     func getSavedDishes() {
         savedDishes = userDefaultsManager.getSavedDishes()
@@ -21,15 +22,16 @@ final class CartViewModel: ObservableObject {
     }
     
     func setDishesSum() {
+        dishesSum = 0
         for dish in savedDishes {
-            dishesSum += dish.price ?? 0
+            dishesSum += (dish.price ?? 0) * dish.count
         }
+        totalSumString = formate(number: dishesSum)
     }
     
     func plusDish(_ dish: SavedDish) {
         var newDish = dish
         newDish.count += 1
-        
         
         for index in 0..<savedDishes.count {
             if savedDishes[index] == dish {
@@ -62,5 +64,12 @@ final class CartViewModel: ObservableObject {
         getSavedDishes()
     }
     
+    private func formate(number: Int) -> String {
+        let newNumber = Float(number)
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.groupingSeparator = " "
+        return formatter.string(from: NSNumber(value: newNumber)) ?? ""
+    }
 }
 

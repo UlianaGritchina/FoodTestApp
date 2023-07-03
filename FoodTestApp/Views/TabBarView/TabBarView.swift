@@ -13,24 +13,27 @@ struct TabBarView: View {
         TabView {
             MainView()
                 .tabItem {
-                    Image("homeIcone")
+                    Image("homeIcon")
                     Text("Главная")
                 }
                 .environmentObject(dishDetailsViewModel)
             
             NoContentView()
                 .tabItem {
-                    Label("Поиск", systemImage: "bolt.fill")
+                    Image("searchIcon")
+                    Text("Поиск")
                 }
-             
+            
             CartView()
                 .tabItem {
-                    Label("Корзина", systemImage: "gear")
+                    Image("cartIcon")
+                    Text("Корзина")
                 }
             
             NoContentView()
                 .tabItem {
-                    Label("Аккаунт", systemImage: "gear")
+                    Image("accountIcon")
+                    Text("Аккаунт")
                 }
         }
         .overlay {
