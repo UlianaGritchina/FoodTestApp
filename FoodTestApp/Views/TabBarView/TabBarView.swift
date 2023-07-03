@@ -18,7 +18,7 @@ struct TabBarView: View {
                 }
                 .environmentObject(dishDetailsViewModel)
             
-            Color.red
+            NoContentView()
                 .tabItem {
                     Label("Поиск", systemImage: "bolt.fill")
                 }
@@ -28,7 +28,7 @@ struct TabBarView: View {
                     Label("Корзина", systemImage: "gear")
                 }
             
-            Color.purple
+            NoContentView()
                 .tabItem {
                     Label("Аккаунт", systemImage: "gear")
                 }

@@ -12,29 +12,18 @@ struct CartView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                ForEach(viewModel.savedDishes) { dish in
-                    DishCell(
-                        savedDish: dish,
-                        plusAction: { viewModel.plusDish(dish) },
-                        minusAction: { viewModel.minusDish(dish) }
-                    )
+            VStack {
+                if !viewModel.savedDishes.isEmpty {
+                    dishesScrollView
+                } else {
+                    NoContentView()
                 }
-                .padding(.top, 16)
-                .padding(.bottom, 80)
-            }
-            .overlay(alignment: .bottom) {
-                AppButtonView(title: "Оплатить \(viewModel.dishesSum) ₽", action: {})
-                    .padding(.horizontal, 16)
-                    .padding(.bottom, 16)
             }
             .toolbar {
                 userLocationInfoView
                 userImageView
             }
-            .onAppear {
-                viewModel.getSavedDishes()
-            }
+            .onAppear { viewModel.getSavedDishes() }
         }
     }
 }
@@ -58,6 +47,25 @@ extension CartView {
     private var userLocationInfoView: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             UserLocationView()
+        }
+    }
+    
+    private var dishesScrollView: some View {
+        ScrollView {
+            ForEach(viewModel.savedDishes) { dish in
+                DishCell(
+                    savedDish: dish,
+                    plusAction: { viewModel.plusDish(dish) },
+                    minusAction: { viewModel.minusDish(dish) }
+                )
+            }
+            .padding(.top, 16)
+            .padding(.bottom, 80)
+        }
+        .overlay(alignment: .bottom) {
+            AppButtonView(title: "Оплатить \(viewModel.dishesSum) ₽", action: {})
+                .padding(.horizontal, 16)
+                .padding(.bottom, 16)
         }
     }
     
