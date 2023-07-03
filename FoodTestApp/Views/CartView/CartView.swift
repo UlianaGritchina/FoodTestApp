@@ -19,10 +19,7 @@ struct CartView: View {
                     emptyCartView
                 }
             }
-            .toolbar {
-                userLocationInfoView
-                userImageView
-            }
+            .toolbar { UserInfoToolBar() }
             .onAppear { viewModel.getSavedDishes() }
         }
     }
@@ -36,28 +33,16 @@ struct CartView_Previews: PreviewProvider {
 
 extension CartView {
     
-    private var userImageView: some ToolbarContent {
-        ToolbarItem(placement: .navigationBarTrailing) {
-            Image("userImage")
-                .resizable()
-                .frame(width: 44, height: 44)
-        }
-    }
-    
-    private var userLocationInfoView: some ToolbarContent {
-        ToolbarItem(placement: .navigationBarLeading) {
-            UserLocationView()
-        } 
-    }
-    
     private var dishesScrollView: some View {
         ScrollView {
-            ForEach(viewModel.savedDishes) { dish in
-                DishCell(
-                    savedDish: dish,
-                    plusAction: { viewModel.plusDish(dish) },
-                    minusAction: { viewModel.minusDish(dish) }
-                )
+            LazyVStack(spacing: 16) {
+                ForEach(viewModel.savedDishes) { dish in
+                    DishCell(
+                        savedDish: dish,
+                        plusAction: { viewModel.plusDish(dish) },
+                        minusAction: { viewModel.minusDish(dish) }
+                    )
+                }
             }
             .padding(.top, 16)
             .padding(.bottom, 80)

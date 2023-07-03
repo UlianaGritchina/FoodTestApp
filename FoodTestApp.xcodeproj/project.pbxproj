@@ -13,6 +13,7 @@
 		0E5EA1582A529EB700EF78E8 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA1572A529EB700EF78E8 /* CartViewModel.swift */; };
 		0E5EA15A2A52A17000EF78E8 /* travolta.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0E5EA1592A52A17000EF78E8 /* travolta.gif */; };
 		0E5EA15C2A52A30600EF78E8 /* NoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA15B2A52A30600EF78E8 /* NoContentView.swift */; };
+		0E5EA15F2A52C9D800EF78E8 /* UserInfoToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5EA15E2A52C9D800EF78E8 /* UserInfoToolBar.swift */; };
 		0EA204DD2A51669300E2A3D4 /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204DC2A51669300E2A3D4 /* Color + Extension.swift */; };
 		0EA204E02A51689C00E2A3D4 /* DishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204DF2A51689C00E2A3D4 /* DishView.swift */; };
 		0EA204E22A5168B500E2A3D4 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA204E12A5168B500E2A3D4 /* Dish.swift */; };
@@ -50,6 +51,7 @@
 		0E5EA1572A529EB700EF78E8 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		0E5EA1592A52A17000EF78E8 /* travolta.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = travolta.gif; sourceTree = "<group>"; };
 		0E5EA15B2A52A30600EF78E8 /* NoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContentView.swift; sourceTree = "<group>"; };
+		0E5EA15E2A52C9D800EF78E8 /* UserInfoToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoToolBar.swift; sourceTree = "<group>"; };
 		0EA204DC2A51669300E2A3D4 /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
 		0EA204DF2A51689C00E2A3D4 /* DishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishView.swift; sourceTree = "<group>"; };
 		0EA204E12A5168B500E2A3D4 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				0ED6FAED2A4F5C170014C1BF /* ScaleButtonModifire.swift */,
 				0EA204F02A5187CC00E2A3D4 /* AppButtonView.swift */,
 				0EAF10072A51FBAE00699D8E /* UserLocationView.swift */,
+				0E5EA15E2A52C9D800EF78E8 /* UserInfoToolBar.swift */,
 				0E5EA1512A52860700EF78E8 /* DishImageView.swift */,
 				0E5EA15D2A52A78F00EF78E8 /* NoContentView */,
 			);
@@ -368,6 +371,7 @@
 				0ED6FAE62A4F4A260014C1BF /* ImageDownloadManager.swift in Sources */,
 				0ED6FAE82A4F4BA50014C1BF /* CategoryCellViewModel.swift in Sources */,
 				0EA204E62A516EBF00E2A3D4 /* DishesApiManager.swift in Sources */,
+				0E5EA15F2A52C9D800EF78E8 /* UserInfoToolBar.swift in Sources */,
 				0E5EA1562A52914600EF78E8 /* SavedDish.swift in Sources */,
 				0E5EA1582A529EB700EF78E8 /* CartViewModel.swift in Sources */,
 				0EA204E82A51721B00E2A3D4 /* CategoryDetailsViewModel.swift in Sources */,

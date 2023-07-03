@@ -27,7 +27,7 @@ struct CategoryCell: View {
             .foregroundColor(.black)
             .padding(.top, 12)
             .padding(.leading, 16)
-            .font(.custom("SFProDisplay-Regular", size: 20))
+            .font(.custom("SFProDisplay-Medium", size: 20))
     }
     
 }

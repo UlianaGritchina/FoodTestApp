@@ -41,7 +41,7 @@ struct UserLocationView: View {
             
             VStack(alignment: .leading) {
                 Text(viewModel.userLocation)
-                    .font(.custom("SFProDisplay-Regular", size: 18))
+                    .font(.custom("SFProDisplay-Medium", size: 18))
                 
                 Text(viewModel.currentDate)
                     .foregroundColor(.black.opacity(0.5))

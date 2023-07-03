@@ -18,10 +18,7 @@ struct MainView: View {
                     ProgressView()
                 }
             }
-            .toolbar {
-                userLocationInfoView
-                userImageView
-            }
+            .toolbar { UserInfoToolBar() }
         }
     }
 }
@@ -34,22 +31,8 @@ struct ContentView_Previews: PreviewProvider {
 
 extension MainView {
     
-    private var userImageView: some ToolbarContent {
-        ToolbarItem(placement: .navigationBarTrailing) {
-            Image("userImage")
-                .resizable()
-                .frame(width: 44, height: 44)
-        }
-    }
-    
-    private var userLocationInfoView: some ToolbarContent {
-        ToolbarItem(placement: .navigationBarLeading) {
-            UserLocationView()
-        }
-    }
-    
     private var categoriesScrollView: some View {
-        ScrollView {
+        ScrollView(showsIndicators: false) {
             LazyVStack(spacing: 8) {
                 ForEach(viewModel.categories) { category in
                     categoryNavLink(category)
@@ -68,4 +51,5 @@ extension MainView {
     }
     
 }
+
 
